@@ -12,7 +12,7 @@
 		36A75D77266904E1009EE58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A75D76266904E1009EE58C /* Assets.xcassets */; };
 		36A75D7A266904E1009EE58C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A75D79266904E1009EE58C /* Preview Assets.xcassets */; };
 		36A75D84266906BC009EE58C /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = 36A75D83266906BC009EE58C /* userData.json */; };
-		36A75D862669130D009EE58C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A75D852669130D009EE58C /* LoginView.swift */; };
+		36A75D862669130D009EE58C /* LoggedinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A75D852669130D009EE58C /* LoggedinView.swift */; };
 		36A75D88266923B5009EE58C /* ShowPasswordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A75D87266923B5009EE58C /* ShowPasswordButton.swift */; };
 		36A75D8A266923D0009EE58C /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A75D89266923D0009EE58C /* CustomButtonStyle.swift */; };
 		36A75D8C266923E2009EE58C /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A75D8B266923E2009EE58C /* UserImage.swift */; };
@@ -30,7 +30,7 @@
 		36A75D79266904E1009EE58C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		36A75D7B266904E1009EE58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36A75D83266906BC009EE58C /* userData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
-		36A75D852669130D009EE58C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		36A75D852669130D009EE58C /* LoggedinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedinView.swift; sourceTree = "<group>"; };
 		36A75D87266923B5009EE58C /* ShowPasswordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPasswordButton.swift; sourceTree = "<group>"; };
 		36A75D89266923D0009EE58C /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		36A75D8B266923E2009EE58C /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
@@ -54,6 +54,7 @@
 		36A75D66266904DB009EE58C = {
 			isa = PBXGroup;
 			children = (
+				36A75D9326694137009EE58C /* ReadMe.txt */,
 				36A75D71266904DB009EE58C /* Log-in Page */,
 				36A75D70266904DB009EE58C /* Products */,
 			);
@@ -77,7 +78,6 @@
 				36A75D76266904E1009EE58C /* Assets.xcassets */,
 				36A75D7B266904E1009EE58C /* Info.plist */,
 				36A75D78266904E1009EE58C /* Preview Content */,
-				36A75D9326694137009EE58C /* ReadMe.txt */,
 				36A75D9526697021009EE58C /* evironmentObjectTesting.swift */,
 			);
 			path = "Log-in Page";
@@ -94,7 +94,7 @@
 		36A75D8D26692D38009EE58C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				36A75D852669130D009EE58C /* LoginView.swift */,
+				36A75D852669130D009EE58C /* LoggedinView.swift */,
 				36A75D87266923B5009EE58C /* ShowPasswordButton.swift */,
 				36A75D89266923D0009EE58C /* CustomButtonStyle.swift */,
 				36A75D8B266923E2009EE58C /* UserImage.swift */,
@@ -184,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36A75D9226692EA4009EE58C /* UserModelData.swift in Sources */,
-				36A75D862669130D009EE58C /* LoginView.swift in Sources */,
+				36A75D862669130D009EE58C /* LoggedinView.swift in Sources */,
 				36A75D9026692D74009EE58C /* UserModel.swift in Sources */,
 				36A75D9626697021009EE58C /* evironmentObjectTesting.swift in Sources */,
 				36A75D75266904DB009EE58C /* ContentView.swift in Sources */,

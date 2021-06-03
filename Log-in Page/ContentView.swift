@@ -22,8 +22,6 @@ struct ContentView: View {
         }
     
     @State var errorMsgColor = Color(red:220.0/255.0, green:0.0, blue:0.0)
-        
-        //Color(red: 255.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, opacity: 1.0)
   
     var body: some View {
  
@@ -100,18 +98,18 @@ struct ContentView: View {
                 Text(errorMsg)
                     .foregroundColor(errorMsgColor)
                 
-                NavigationLink(destination: LoginView(userName: $userName, userModelData: $userModelData, userInformation: userInformation), isActive: $authenticationPassed){
+                NavigationLink(destination: LoggedinView(userName: $userName, userModelData: $userModelData, userInformation: userInformation), isActive: $authenticationPassed){
                     EmptyView()
                }
+                //.navigationTitle("")
+                .navigationBarHidden(true)
             }
-            .navigationBarHidden(true)
             
         }
-        .navigationBarHidden(true)
         .padding()
+        //.navigationTitle("")
+        .navigationBarHidden(true)
     }
-    .navigationBarHidden(true)
-    .navigationBarBackButtonHidden(true)
         
     }
 }
