@@ -101,13 +101,10 @@ struct ContentView: View {
                 NavigationLink(destination: LoggedinView(userName: $userName, userModelData: $userModelData, userInformation: userInformation), isActive: $authenticationPassed){
                     EmptyView()
                }
-                //.navigationTitle("")
-                .navigationBarHidden(true)
             }
             
         }
         .padding()
-        //.navigationTitle("")
         .navigationBarHidden(true)
     }
         
