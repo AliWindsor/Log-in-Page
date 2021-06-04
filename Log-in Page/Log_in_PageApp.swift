@@ -12,6 +12,7 @@ struct Log_in_PageApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                
         }
     }
 }

@@ -33,6 +33,7 @@ struct LoggedinView: View {
                 }
   
             }
+            .supportedOrientations(.portrait)
         
     }
    

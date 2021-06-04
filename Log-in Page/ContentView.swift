@@ -35,10 +35,13 @@ struct ContentView: View {
                 UserImage()
                 
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 2)
             }
             
             Group{ //inputs
+                Text(errorMsg)
+                    .foregroundColor(errorMsgColor)
+                
                 TextField("Username", text: $userName )
                     .padding()
                     .overlay(RoundedRectangle(cornerRadius: 30.0)
@@ -95,8 +98,7 @@ struct ContentView: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text(errorMsg)
-                    .foregroundColor(errorMsgColor)
+                
                 
                 NavigationLink(destination: LoggedinView(userName: $userName, userModelData: $userModelData, userInformation: userInformation), isActive: $authenticationPassed){
                     EmptyView()
@@ -107,12 +109,15 @@ struct ContentView: View {
         .padding()
         .navigationBarHidden(true)
     }
-        
+    .supportedOrientations(.portrait)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            
+        }
     }
 }
